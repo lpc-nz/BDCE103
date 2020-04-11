@@ -83,6 +83,7 @@ CREATE TABLE Staffs (
 	mobile VARCHAR(15),
 	email VARCHAR(50),
 	history_id BIT,
+	FOREIGN KEY(history_id) REFERENCES Histories (history_id) ON DELETE SET NULL, -- Update history_id
 	FOREIGN KEY(position_id) REFERENCES Positions (position_id) ON DELETE SET NULL,
 	FOREIGN KEY(branch_id) REFERENCES Branches (branch_id) ON DELETE SET NULL
 );
