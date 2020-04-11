@@ -26,7 +26,7 @@ CREATE TABLE Bill (
 	customer_id INT,
 	order_date DATE,
 	pick_branch VARCHAR(20),
-	pick_date DATE
+	pick_date DATE,
 	FOREIGN KEY(branch_id) REFERENCES Branches (branch_id),
 	FOREIGN KEY(product_id) REFERENCES Products (product_id),
 	FOREIGN KEY(customer_id) REFERENCES Customer (customer_id)
