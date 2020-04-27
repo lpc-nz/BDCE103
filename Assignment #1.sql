@@ -114,7 +114,7 @@ CREATE TABLE Customer (
 	city VARCHAR(20),
 	customerType VARCHAR(50),
 	mobile VARCHAR(15),
-	creaditStatus VARCHAR(20)
+	creditStatus VARCHAR(20)
 );
 
 CREATE TABLE Accounts (
